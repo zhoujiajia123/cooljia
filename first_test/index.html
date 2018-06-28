@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>测试</title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			body {
+				margin: 0 auto;
+				width: 960px;
+				font-size: 14px;
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			
+			.header {
+				height: 50px;
+				background: gray;
+				line-height: 50px;
+				position: relative;
+			}
+			
+			.nav {
+				list-style: none;
+				position: absolute;
+				color: white;
+			}
+			
+			.menu {
+				float: left;
+				margin-left: 10px;
+			}
+			
+			.menu>a {
+				font-size: 15px;
+				font-family: "微软雅黑";
+				color: white;
+			}
+			
+			.menu:hover>a {
+				background: darkslategray;
+			}
+			
+			.menu:hover .submenu {
+				display: block;
+			}
+			
+			.submenu {
+				list-style: none;
+				background: rgb(55, 55, 55);
+				display: none;
+				position: absolute;
+			}
+			
+			.main {
+				margin: 0 auto;
+				height: 700px;
+				border: solid red 1px;
+			}
+			
+			.top {
+				height: 300px;
+				border: solid yellow 1px;
+			}
+			
+			.picture {
+				width: 400px;
+				height: 300px;
+				margin-left:15px ;
+				float: left;
+				border: solid blue 1px;
+			}
+			 #lunbo ul li:not(:first-child){display: none;}
+
+			.introduce {
+				line-height: 25px;
+				width: 500px;
+				height: 300px;
+				float: left;
+				margin-left: 20px;
+				border: solid blue 1px;
+			}
+			
+			.introduce p {
+				margin: 10px;
+				text-indent: 2em;
+			}
+			
+			.middle {
+				margin-top: 20px;
+				height: 300px;
+				border: solid yellow 1px;
+			}
+			
+			.news {
+				line-height: 25px;
+				margin-left: 15px;
+				float: left;
+				height: 300px;
+				width: 400px;
+				border: solid cadetblue 1px;
+			}
+			
+			.listnews {
+				list-style: none;
+				margin: 10px;
+				font-size: 12px;
+				color: deepskyblue;
+			}
+			
+			.friendlink {
+				line-height: 25px;
+				width: 500px;
+				height: 300px;
+				float: left;
+				margin-left: 20px;
+				border: solid blue 1px;
+			}
+			.friendlink ul {
+				margin: 10px;
+				list-style: none;
+				
+			}
+			.friendlink ul li a{
+				color: #808080;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="logo" align="center">
+			<a href="#"><img src="img/teamlogo.png" /></a>
+		</div>
+
+		<div class="header">
+			<ul id="nav" class="nav">
+				<li class="menu">
+					<a href="#">首页</a>
+					<ul class="submenu">
+						<li>二级菜单</li>
+						<li>二级菜单</li>
+						<li>二级菜单</li>
+					</ul>
+				</li>
+
+				<li class="menu">
+					<a href="#">实验室概况</a>
+					<ul class="submenu">
+						<li>二级菜单</li>
+						<li>二级菜单</li>
+						<li>二级菜单</li>
+					</ul>
+				</li>
+
+				<li class="menu">
+					<a href="#">科研成果</a>
+					<ul class="submenu">
+						<li>二级菜单</li>
+						<li>二级菜单</li>
+						<li>二级菜单</li>
+					</ul>
+				</li>
+
+				<li class="menu">
+					<a href="#">人才培养</a>
+					<ul class="submenu">
+						<li>二级菜单</li>
+						<li>二级菜单</li>
+						<li>二级菜单</li>
+					</ul>
+				</li>
+
+				<li class="menu">
+					<a href="#">开放交流</a>
+					<ul class="submenu">
+						<li>二级菜单</li>
+						<li>二级菜单</li>
+						<li>二级菜单</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+		<div class="main">
+			<div class="top">
+				<div class="picture" id="lunbo">
+					<ul>
+						<li><img src="img/show1.png" width="400px" height="300px"/></li>
+						<li><img src="img/show2.png" width="400px" height="300px"/></li>
+						<li><img src="img/show3.png" width="400px" height="300px"/></li>
+					</ul>
+				</div>
+				<div class="introduce">
+					<h3 align="center" style="background: darkturquoise;">实验室简单介绍</h3>
+					<p> 浙江省数据存储传输及应用技术研究重点实验室依托于杭州电子科技大学的浙江省重中之重学科 "计算机应用技术"和浙江省重点学科"信号与信息处理"和"通信与信息系统"， 拟在国防重点学科实验室"通信信息传输与融合技术"、原信息产业部重点试验室"信号与信息处理"、 "计算机应用技术"基础上建立。由"高效无线传输技术实验室"、"云存储技术实验室"、 "传输与存储中的安全技术及应用实验室"等3个实验室组成，于2012年批复建设。实验室由王海泉研究员任主任， 赵知劲教授和徐向华教授任副主任。中国工程院院士李乐民教授任学术委员会主任。实验室现有专职研究人员40名， 其中正高14名、副教授15名，具有博士学位34名。
+					</p>
+				</div>
+			</div>
+			<div class="middle">
+				<div class="news">
+					<h3 align="center" style="background: darkturquoise;">新闻动态>></h3>
+					<ul class="listnews">
+						<li>打个电话繁华繁华过后就几个就来了打不开皮特【判若天渊 如同</li>
+						<li>返回结果就回家回家过节有人提议热额威威过几个客服法国进口</li>
+						<li>风格和机关还将根据规划根据规划激光焊接如图体育台兔兔提u太容易</li>
+						<li>风格恢复我特意人也他也让他特意u退域ii要天天有</li>
+						<li>非4复合弓恶意了tyre退了我二院统一额头湾他有哦i哦upper有而已</li>
+						<li>热汤6会如何厄特人有人有人提议额的图题有i皮【噢【 二元uyii兔兔</li>
+					</ul>
+				</div>
+				<div class="friendlink"  align="center">
+					<h3 align="center" style="background: darkturquoise;">友情链接</h3>
+					<ul >
+						<li><a href="http://www.hdu.edu.cn/">------------杭州电子科技大学------------</a></li>
+						<li><a href="http://www.hdu.edu.cn/">------------杭州电子科技大学------------</a></li>
+						<li><a href="http://www.hdu.edu.cn/">------------杭州电子科技大学------------</a></li>
+						<li><a href="http://www.imut.edu.cn/">------------内蒙古工业大学------------</a></li>
+						<li><a href="http://www.hdu.edu.cn/">------------杭州电子科技大学------------</a></li>
+						<li><a href="http://www.hdu.edu.cn/">------------杭州电子科技大学------------</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="bottom"></div>
+		</div>
+		<script type="text/javascript">
+			var lunbo = document.getElementById("lunbo").getElementsByTagName("li");
+			var num = 0;
+			var	len = lunbo.length;
+			setInterval(function() {
+				lunbo[num].style.display = "none";
+				num = ++num == len ? 0 : num;
+				lunbo[num].style.display = "inline-block";
+			}, 3000)
+		</script>
+	</body>
+
+</html>
